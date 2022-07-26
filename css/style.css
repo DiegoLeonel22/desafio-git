@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+body {
+    background-color: khaki;
+    /* background-image: */
+    display: grid;
+    
+}
+
+h1 {
+
+    color: balck;
+    font-family: 'Roboto', sans-serif;
+    }
+    
+    .enlaces {
+        
+        align-items: center;
+        background-color:rgb(11, 77, 77);
+        width: 100%;
+        height: 100px;
+        display: grid;
+        grid-template-areas: 
+        " none contactos productos nosotros ubicacion";
+    }
+    .contactos {
+        width: 50px;
+        height: 30px;
+        grid-area: contactos;
+    }
+    .productos {
+        width: 50px;
+        height: 30px;
+        grid-area: productos;
+    }
+    .nosotros { 
+        width: 50px;
+        height: 30px;
+        grid-area: nosotros;
+    }
+    .ubicacion {
+        width: 50px;
+        height: 30px;
+        grid-area: ubicacion;
+    }
+    
+    .banner {
+        background-color:yellow;
+        width: 100%;
+        height: 350px;
+    }
+    .imageBanner {
+        width: 100%;
+        height: 350px;
+    }
+    /* .titulo {
+        background-color: blanchedalmond;
+    } */
+    
+    a {
+        display: block;
+        color: aliceblue;
+        text-decoration:dashed;
+        font-size: 30px;
+    }
+    
+
+.listaMenu {
+display: inline;
+
+
+
+}
+h2 {
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    text-align: center;
+}
+    
+
+.cajaPrincipal {
+    
+    background-color: darkgray;
+    border: 2px black solid;
+    width: 600px;
+    height: 600px;
+    margin: 20px 25%;
+    display: flex;
+    flex-flow: row  wrap;
+
+    
+    
+}
+
+.producto {
+    background-color: deeppink;
+    border: 1px black solid;
+    width: 150px;
+    height: 150px;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    justify-content: center;
+
+}
+
+footer {
+    background-color: aqua;
+}
+
+
+/* responsive */
+
+@media (max-width: 900px) and (min-width: 400px) {
+
+.enlaces {
+    display: none;
+}
+.sectionP {
+    height: 70%;
+    width: 70%;
+    
+}
+.cajaPrincipal {
+    height: 100%;
+    width: 70%;  
+    overflow: scroll; 
+}
+}
+    /* PAGINA PRODUCTOS */
+
+    .mainP {
+
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        }
+    .bodyProductos {
+        display: grid;
+        grid-template-areas: 
+        "headerFP headerFP headerFP"
+        "mainP mainP mainP"
+        "footerP footerP footerP";
+    }
+    .headerFP {
+        grid-area: headerFP;
+    }
+
+    .mainP {
+        grid-area: mainP;
+    }
+
+    #footerP {
+        grid-area: footerP;
+    }
